@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <!-- 导入CSS样式文件 -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 用户注册表单 -->
+    <form action="register.php" method="POST">
+        <h2>用户注册</h2>
+        
+        <!-- 用户名输入框 -->
+        <div>
+            <img src="./images/07.jpg" alt="用户图标" width="21" height="20"> <!-- 用户名图标 -->
+            用户名：<input type="text" name="username" required> <!-- 用户名输入框 -->
+        </div>
+        
+        <!-- 密码输入框 -->
+        <div>
+            <img src="./images/08.jpg" alt="密码图标" width="21" height="20"> <!-- 密码图标 -->
+            密码：<input type="password" name="password" required> <!-- 密码输入框 -->
+        </div>
+        
+        <!-- 邮箱输入框 -->
+        <div>
+            <img src="./images/08.jpg" alt="邮箱图标" width="21" height="20"> <!-- 邮箱图标 -->
+            邮箱：<input type="email" name="email" required> <!-- 邮箱输入框 -->
+        </div>
+        
+        <!-- 提交按钮 -->
+        <input type="submit" value="注册">
+        
+        <!-- 链接到登录页面 -->
+        <div class="links">
+            <a href="login.html">已有账号? 登录</a> <!-- 登录页面链接 -->
+        </div>
+    </form>
+     <!-- 页脚部分 -->
+     <footer>
+        <p>校园论坛系统</p>
+    </footer>
+</body>
+</html>

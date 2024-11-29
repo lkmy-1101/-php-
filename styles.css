@@ -1,0 +1,92 @@
+/* 通用页面样式 */
+body {
+    background-image: url('./images/02.jpg'); /* 背景图片 */
+    background-size: cover; /* 背景图片覆盖整个屏幕 */
+    background-repeat: no-repeat; /* 不重复背景图片 */
+    background-attachment: fixed; /* 页面滚动时背景固定 */
+    margin: 0; /* 去除默认的页面边距 */
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: center; /* 水平居中对齐 */
+    align-items: center; /* 垂直居中对齐 */
+    height: 100vh; /* 页面高度占满视口 */
+}
+
+/* 表单样式 */
+form {
+    background: rgba(255, 255, 255, 0.8); /* 半透明的白色背景 */
+    padding: 20px; /* 内边距 */
+    border-radius: 8px; /* 圆角 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 阴影效果 */
+    text-align: left; /* 文字左对齐 */
+    width: 300px; /* 设置表单宽度 */
+}
+
+/* 表单标题 */
+form h2 {
+    text-align: center; /* 标题居中 */
+}
+
+/* 表单输入框 */
+form div {
+    display: flex; /* 使用 Flexbox 布局 */
+    align-items: center; /* 输入框和图标垂直居中对齐 */
+    margin-bottom: 15px; /* 每个表单项之间的间距 */
+}
+
+/* 表单图标 */
+form div img {
+    margin-right: 10px; /* 图标与输入框之间的间距 */
+}
+
+/* 输入框样式 */
+input[type="text"], input[type="password"], input[type="email"] {
+    flex: 1; /* 输入框占满剩余空间 */
+    padding: 5px; /* 输入框内边距 */
+    border: 1px solid #ccc; /* 输入框边框 */
+    border-radius: 4px; /* 输入框圆角 */
+}
+
+/* 提交按钮样式 */
+input[type="submit"] {
+    width: 100%; /* 按钮宽度占满表单 */
+    margin-top: 10px; /* 按钮上方间距 */
+    padding: 10px; /* 按钮内边距 */
+    background-color: #007BFF; /* 按钮背景色 */
+    color: white; /* 按钮文字颜色 */
+    border: none; /* 去除按钮边框 */
+    border-radius: 4px; /* 按钮圆角 */
+    cursor: pointer; /* 鼠标悬停时显示指针 */
+}
+
+/* 提交按钮悬浮样式 */
+input[type="submit"]:hover {
+    background-color: #0056b3; /* 悬浮时按钮背景色变深 */
+}
+
+/* 链接样式 */
+.links {
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: center; /* 链接水平居中 */
+    margin-top: 10px; /* 链接上方间距 */
+}
+
+.links a {
+    text-decoration: none; /* 去除链接下划线 */
+    color: #007BFF; /* 链接文字颜色 */
+}
+
+/* 链接悬浮样式 */
+.links a:hover {
+    text-decoration: underline; /* 悬浮时显示下划线 */
+}
+
+/* 页脚样式 */
+footer {
+    width: 100%; /* 页脚宽度占满整个页面 */
+    text-align: center; /* 中心对齐文本 */
+    padding: 2px; /* 减小内边距 */
+    position: fixed; /* 固定在页面底部 */
+    bottom: 0; /* 靠底部对齐 */
+    background-color: rgba(255, 255, 255, 0.8); /* 半透明背景 */
+    color: #333; /* 文字颜色 */
+}

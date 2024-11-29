@@ -1,0 +1,38 @@
+/* 顶部导航栏 */
+nav {
+    background-color: rgba(0, 123, 255, 0.8); /* 蓝色背景 */
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between; /* 使内容左右对齐 */
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    background-color: #0056b3; /* 悬浮时背景变深 */
+    border-radius: 4px;
+}
+
+/* 退出按钮样式 */
+nav .logout-btn {
+    background-color: #FF4C4C;  /* 红色背景 */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+nav .logout-btn:hover {
+    background-color: #D93636; /* 悬浮时变暗 */
+}
